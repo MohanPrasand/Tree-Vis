@@ -52,7 +52,7 @@ function visualizeTree(ctx,tree,ptr,start=0,end=null,height=1,parentPos=null,off
         end=tree.height();
         canvas.width=250*end*scale;
         canvas.height=100*end*scale;
-        offset=canvas.width-(300*end)+200*canvas.style.width;
+        offset=canvas.width-(300*end)+200;
         end=end*end-1;
         
             
