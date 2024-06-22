@@ -1,0 +1,38 @@
+#embed{
+    color: white;
+    border-bottom: solid 2px white;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    font-size: 1.2em;
+    text-align: center;
+    color:white;
+}
+
+#link{
+    position: relative;
+    background: black;
+    width: 85%;
+    left:50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    overflow: scroll;
+}
+
+#link:hover{
+    color:bisque;
+    background: blue;
+}
+
+#copyl{
+    opacity: 0;
+    cursor: pointer;
+    color: rgb(222, 246, 3);
+}
+#link:hover #copyl{
+    opacity: 1;
+}
+
+

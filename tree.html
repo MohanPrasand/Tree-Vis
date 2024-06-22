@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree-Vis</title>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="treevis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <header id="header">
+        <span id="home"><a href="index.html">Home</a></span>
+        <span id="tree">Tree</span>
+        <span id="embed"><a href="embed.html">Embed</a></span>
+        <span id="about"><a href="about.html">About</a></span>
+    </header>
+    <body>
+        <label style="font-size: 1.2em; color: rgb(220, 218, 218);">Enter the tree:</label> <br>
+        <input type="text" id="input" value="1,2,3,4,5,6,7"> <br> <br>
+        <button id="visbutton" onclick="visualize()">Vis!</button>
+        <button id="dfsbutton">DFS</button>
+        <button id="bfsbutton">BFS</button>
+        <label style="font-size: 1.2em;color:rgb(87, 60, 241)">&emsp;&emsp; Speed</label>
+        <input type="range" min="500" max="3000" value="2500"  id="speedbar"> 
+        <button id="Image">Download Image</button><br><br>
+
+        <canvas id="Canvas"></canvas>
+    </body>
+    <script type="text/javascript" src="treevis.js"></script>
+    <script src="treeutils.js"></script>
+    <script src="treedfsvis.js"></script>
+    <script src="treebfsvis.js"></script>
+    <script>
+        function visualize(){
+            tree=getTree();
+            visualizeTree(ctx,tree,[]);
+        }
+    </script>
+</html>
